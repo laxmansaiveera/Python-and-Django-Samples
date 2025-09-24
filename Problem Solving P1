@@ -1,0 +1,41 @@
+l1=["Sravan","harish","aravind","akhil"]
+l2=[24,17,20,18]
+for x in range (len(l1)):
+    name=l1[x]
+    age=l2[x]
+    if age>=18:
+        print(f"{name}-{age}-eligible")
+    else:
+    
+        print(f"{name}-{age}-not eligible")
+
+#2 sum of digits
+
+n = int(input("Enter a number: "))
+sum_digits = 0
+
+while n > 0:
+    sum_digits += n % 10
+    n //= 10
+
+print("Sum of digits:", sum_digits)
+
+#3 highest digit in an integer
+n = int(input("Enter a number: "))
+highest = max(int(digit) for digit in str(n))
+print("Highest digit:", highest)
+
+# #4
+amount = int(input("Enter the amount: "))
+price = 1
+wrappers_needed = 3
+
+chocolates = amount // price
+wrappers = chocolates
+
+while wrappers >= wrappers_needed:
+    new_chocolates = wrappers // wrappers_needed
+    chocolates += new_chocolates
+    wrappers = (wrappers % wrappers_needed) + new_chocolates
+
+print("Total chocolates eaten:", chocolates)

@@ -1,0 +1,5 @@
+upper_case = 'LAXMAN SAI'
+lower_case = 'laxman sai'
+camel_case = 'laxman Sai'
+pascal_case = 'Laxman Sai'
+snake_case = ''
